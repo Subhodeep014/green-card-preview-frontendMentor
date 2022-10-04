@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family{} 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    margin: none;
+    border: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    /* margin-top: 200px; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    position: absolute;
+    /* justify-content: center; */
+    top: 23%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1000px;
+    margin-bottom: auto;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.info-box{
+    margin: 0 auto;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0 40px;
+    max-width: 358px;
+    max-height: 450px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image{
+    /* text-align: right; */
+    margin-bottom: 0;
+    background-image: url(../green-card-preview-frontendMentor/images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 361px;
+    height: 449px;
+}
+    /* background-image: url(../green-product-preview-card-component-main/images/image-product-desktop.jpg); */
+    /* height: 350px; */
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+.heading{
+    padding-right: 29px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.product-title{
+    letter-spacing: 8px;
+    font-weight: 500;
+    margin-top: 0;
+}
+.pricing{
+    text-align: left;
+    align-items: center;
+    display: flex;
+}
+
+.discounted-price{
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+button{
+    color: hsl(30, 38%, 92%);
+    background-color: hsl(158, 36%, 37%);
+    width: 280px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(159, 35%, 19%);
+    color: white;
+}
+button img{
+    margin-right: 10px;
+}
+.price-cut{
+    height: 1px;
+    width: 52px;
+    position: relative;
+    right: 18.5%;
+    background-color: hsl(228, 12%, 48%);
+}
+
+@media(max-width:700px){
+    body{
+        height: 100vh;
+    }
+    .container{
+        top: 10%;
+        position: relative;
+        align-items: center;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+    .image img{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .info-box{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        max-width: 300px;
+    }
+    .image{
+        height: 232px;
+        text-align: center;
+        margin: auto;
+        background-image: url(../green-card-preview-frontendMentor/images/image-product-mobile.jpg);
+    }
+    .info-box{
+        max-width: 360px;
+        padding: 20px 27px;
+    }
+    button{
+        width: 308px;
+    }
+    .price-cut{
+        right: 17%;
+    }
+}
