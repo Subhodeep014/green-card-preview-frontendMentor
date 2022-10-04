@@ -141,7 +141,7 @@ button img{
         height: 232px;
         text-align: center;
         margin: auto;
-        background-image: url(./images/image-product-mobile.jpg);
+        background-image: url("https://raw.githubusercontent.com/Subhodeep014/green-card-preview-frontendMentor/main/image-product-mobile.jpg");
     }
     .info-box{
         max-width: 360px;
